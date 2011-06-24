@@ -1,0 +1,10 @@
+<p>hello</p>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+  var server = io.connect('http://localhost');
+  server.on('init', function (data) {
+    console.log(data);
+    server.emit('test-channel', { 'do': 'you copy?' });
+  });
+
+</script>
