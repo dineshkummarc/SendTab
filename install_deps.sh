@@ -1,3 +1,4 @@
+#!/bin/sh
 #install node
 
 #install npm
